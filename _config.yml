@@ -1,11 +1,11 @@
 # Site settings
-title:       "Jekyll Bootstrap 4 with Docker"
-header_title: "Jekyll Bootstrap 4 with Docker"
-email:       your@ema.il
-author:      Your Name
-description: "Jekyll static blog boilerplate with Bootstrap 4 and Docker"
-baseurl:     "/jekyll-bootstrap4-docker"
-url:         "https://hexlet-boilerplates.github.io"
+title:       "Andrey Miskov"
+header_title: "Разные заметки"
+email:       amiskov@gmail.com
+author:      Andrey Miskov
+description: ""
+baseurl:     ""
+url:         "https://amiskov.github.io"
 date_format: "%-d.%m.%Y"
 
 # Google services
@@ -13,7 +13,7 @@ google_analytics: "UA-1360700-62"
 google_verification: ""
 
 # Facebook
-facebook_app_id: "1414002802233483"
+facebook_app_id: ""
 
 # Optional features
 animated:             false
@@ -24,16 +24,16 @@ ajaxify_contact_form: true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: "disqus_xxx"
+disqus_shortname: "amiskov"
 
 # Social icons
-github_username: hexlet
+github_username:
 bitbucket_username:
 stackoverflow_id:
-twitter_username: hexlet
+twitter_username:
 google_plus_id:
 linkedin_username:
-facebook_username: hexlet
+facebook_username:
 angellist_username:
 medium_id:
 bitcoin_url:

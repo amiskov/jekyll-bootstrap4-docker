@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col">  
+  <div class="col">
     {% for post in paginator.posts %}
       {% assign minutes = post.content | strip_html | number_of_words | divided_by: 180 %}
       {% if minutes == 0 %}
@@ -29,12 +29,12 @@ layout: default
             permalink
           </a>
         </div>
-        
+
       </div>
       <hr>
   {% endfor %}
   </div>
 </div>
 
-  
+
 </div>
