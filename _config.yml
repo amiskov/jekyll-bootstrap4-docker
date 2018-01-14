@@ -9,7 +9,7 @@ url:         "https://amiskov.github.io"
 date_format: "%-d.%m.%Y"
 
 # Google services
-google_analytics: "UA-1360700-62"
+google_analytics: ""
 google_verification: ""
 
 # Facebook
@@ -19,7 +19,7 @@ facebook_app_id: ""
 animated:             false
 show_related_posts:   false
 show_post_footer:    true
-show_social_icons:    true
+show_social_icons:    false
 ajaxify_contact_form: true
 
 # Disqus post comments
@@ -43,7 +43,7 @@ instagram_username:
 
 # Post sharing icons
 show_sharing_icons: true
-share_text: 'Share this post!'
+share_text: 'Share'
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
