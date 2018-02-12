@@ -16,7 +16,11 @@ layout: default
         </a>
 
         <div>
+            {% if post.excerpt %}
+                {{ post.excerpt }}
+            {% else %}
           {{ post.content }}
+            {% endif %}
         </div>
 
         <div class="meta text-muted">

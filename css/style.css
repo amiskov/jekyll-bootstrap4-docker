@@ -37,3 +37,10 @@ a.nocolor {
   color: inherit;
 }
 
+ul li {
+  margin: 0 0 5px;
+}
+
+.container {
+  max-width: 900px;
+}
