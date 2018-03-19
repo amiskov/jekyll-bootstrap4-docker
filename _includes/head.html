@@ -10,11 +10,11 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl }}" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
     <!-- Our style -->
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M " }}" type="text/css">
     <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M " }}" type="text/css">
     <!-- Open Graph -->
     <meta property="og:locale" content="en_EN">
@@ -38,9 +38,9 @@
     <script>
     hljs.initHighlightingOnLoad();
     </script>
-    <script src="https://use.fontawesome.com/6d58e09dc1.js"></script>
-    <script src="{{" /js/likely.js "  | prepend: site.baseurl}}"></script>
-    <link rel="stylesheet" href="{{" /css/likely.css "  | prepend: site.baseurl }}">
+    <!-- <script src="https://use.fontawesome.com/6d58e09dc1.js"></script> -->
+    <!-- <script src="{{" /js/likely.js "  | prepend: site.baseurl}}"></script> -->
+    <!-- <link rel="stylesheet" href="{{" /css/likely.css "  | prepend: site.baseurl }}"> -->
 
     {% if site.google_analytics %}
     <script type="text/javascript">
