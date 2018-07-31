@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Метод join в Питоне"
-tags: ['python', 'join', 'paradigm shift']
+title: "Где хранить join?"
+tags: ['join', 'python', 'javascript', 'наблюдение']
 ---
 
 Метод [join](https://docs.python.org/3.6/library/stdtypes.html#str.join) в Питоне принадлежит строкам:
