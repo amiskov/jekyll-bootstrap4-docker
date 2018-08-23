@@ -3,6 +3,9 @@ JEKYLL_VERSION=3.6
 start:
 	bundle exec jekyll serve
 
+start-drafts:
+	bundle exec jekyll serve --drafts
+
 serve:
 	docker run --rm \
 	  --volume=$(PWD):/srv/jekyll \
