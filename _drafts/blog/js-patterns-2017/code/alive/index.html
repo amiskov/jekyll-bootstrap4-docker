@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" id="module1">
+        import {creature, inspect, reset} from './creature.js';
+
+        // imported `creature` variable is "alive"
+        // and it changes in all modules, in which it's imported
+
+        console.log(inspect()); // 'Oscar'
+
+        creature.name = 'Winnie';
+        console.log(inspect()); // 'Winnie'
+
+        reset();
+        console.log(inspect()); // 'Oscar Reset'
+    </script> 
+
+    <script type="module" id="module2">
+        // This is absolutely independent module
+        // and it doesn't know anything about `#module1`
+        import {inspect} from './creature.js';
+
+        console.log(inspect()); // 'Oscar Reset'
+   </script>
+</body>
+</html>

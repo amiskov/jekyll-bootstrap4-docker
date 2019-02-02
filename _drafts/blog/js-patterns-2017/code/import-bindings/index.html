@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module">
+        import {counter, increment} from './counter.js';
+
+        // Wrong: TypeError: "counter" is read-only
+        // console.log(counter++);
+
+        // Right
+        console.log(counter); // 0
+        increment();
+        console.log(counter); // 1, все ок
+    </script>
+</body>
+
+</html>

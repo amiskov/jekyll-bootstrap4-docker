@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    const numbers = [1, 2, 3];
+
+    // Задача: вернуть массив объектов `[{value: 1}, {value: 2}, {value: 3}]`
+
+    // Не верно, будет: [undefined, undefined, undefined],
+    // тут скобки для JS — это блок кода, а не объект.
+    // Это получается функция, которая ничего не возвращает.
+    const resultWrong = numbers.map(n => { value: n });
+    console.log('resultWrong', resultWrong);
+
+    // Так норм:
+    const resultRight = numbers.map(n => ({ value: n }));
+    console.log('resultRight', resultRight);
+    </script>
+</body>
+
+</html>

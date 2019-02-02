@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // https://www.youtube.com/watch?v=eis11j_iGMs
+        // λx.λy.x+y 2 3 или сокращенно λxy.x+y 2 3
+
+        // На JS через анонимные
+        console.log(
+            (x => y => x + y)(2)(3)
+        );
+
+
+        // Работает, потому что переменная x замыкается в функции, которая возвращается из `(x)`, то есть в `(y)`
+        // (скобки тут указывают на то, что это анонимная функция, принимающая аргумент)
+
+        // ES5
+        console.log(
+            (function(x) {
+                return function(y) {
+                    return x + y
+                }
+            })(2)(3)
+        );
+
+        const True = x => y => x // возвращаем первое значение
+        const False = x => y => y // возвращаем второе значение
+        const not = b => b(False)(True) // принимаем булево значение (либо функцию True, либо False) и применяем к ней сначала False, и потом True
+        console.log(not(True));
+
+
+    </script>
+</body>
+</html>
